@@ -7,4 +7,5 @@ if __name__=='__main__':
     options.add_argument('--headless')
     driver=webdriver.Chrome('/usr/bin/chromedriver',options=options)
     driver.get('https://ww.google.co.jp/')
+    driver.save_screenshot('output.png')
     print(driver.page_source)
